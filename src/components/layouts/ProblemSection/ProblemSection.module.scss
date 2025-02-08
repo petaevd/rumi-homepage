@@ -1,0 +1,41 @@
+.problem-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    &__components {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25em;
+    }
+
+    &__components-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 36px;
+        padding: 24px;
+        box-shadow: 
+            0.91px 2.72px 6.35px 0px var(--color-shadow-card-first),
+            3.63px 10.89px 11.79px 0px var(--color-shadow-card-first),
+            8.16px 24.49px 15.42px 0px var(--color-shadow-card-second),
+            14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
+            21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
+    }
+
+    &__components-cards {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    &__components-cards > :nth-child(1) {
+        grid-column: 1 / -1;
+    }
+
+    &__components-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

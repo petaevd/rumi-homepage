@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.25em 2.25em 1em;
+    background-color: white;
+    margin: 0 3em;
+    border-radius: 0 0 26px 26px;
+}
+
+.header__logo {
+
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-right: 1em;
+}
+
+.header__nav-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: auto 0;
+}

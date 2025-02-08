@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 1.5em;
+    border-radius: 36px;
+    background-color: var(--color-core-gray-000);
+    box-shadow: 
+        0.91px 2.72px 6.35px 0px var(--color-shadow-card-first),
+        3.63px 10.89px 11.79px 0px var(--color-shadow-card-first),
+        8.16px 24.49px 15.42px 0px var(--color-shadow-card-second),
+        14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
+        21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
+
+    &__icon {
+
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+}

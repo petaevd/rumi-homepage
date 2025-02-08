@@ -1,0 +1,12 @@
+.road-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.road-section__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}

@@ -1,0 +1,32 @@
+import styles from './StartSection.module.scss';
+import { Button } from 'components/ui/Button/index.ts';
+
+export const StartSection = () => {
+
+    return(
+        <section className={styles["start-section"]}>
+            <div className={styles["start-section__left"]}>
+                <div className={styles["start-section__left-form"]}>
+                    <div className={styles["start-section__left-form-text"]}>
+                        <h1>Платформа для быстрой разработки бизнес-приложений</h1>
+                        <p>Создавайте, тестируйте и запускайте приложения быстрее с помощью нашей low-code платформы</p>
+                    </div>
+                    <div className={styles["start-section__left-form-btns"]}>
+                        <Button 
+                            children="Создать приложение"
+                            rounded
+                            size='large'
+                        />
+                    </div>
+                </div>
+            </div>
+            <div className={styles["start-section__rigth"]}>
+                <img 
+                    className={styles["start-section__rigth-img"]} 
+                    src="./src/assets/images/Iphone15.svg" 
+                    alt="Картинка телефона" 
+                />
+            </div>
+        </section>
+    );
+};

@@ -1,0 +1,11 @@
+.advantages-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+}

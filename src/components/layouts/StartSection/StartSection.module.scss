@@ -1,0 +1,32 @@
+.start-section {
+    display: flex;
+    flex-direction: row;
+    gap: 15em;
+    border-radius: 26px;
+    background-color: white;
+    padding: 36px;
+    box-shadow: 
+        0.91px 2.72px 6.35px 0px var(--color-shadow-card-first),
+        3.63px 10.89px 11.79px 0px var(--color-shadow-card-first),
+        8.16px 24.49px 15.42px 0px var(--color-shadow-card-second),
+        14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
+        21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
+
+    &__left-form {
+        display: flex;
+        flex-direction: column;
+        margin: 6.375em auto;
+        gap: 1.5em;
+    }
+
+    &__left-form-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    &__rigth-img {
+        width: 384px;
+        height: 444px;
+    }
+}

@@ -1,0 +1,27 @@
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+/* CSS Custom Properties */
+:root {
+  // Задний фон 
+  --gradient-start: #E1E8FF;
+  --gradient-end: #FFFFFF;
+
+  // Colors
+  --color-core-brand-600: #245BFD;
+  --color-core-gray-000: #FDFEFE;
+
+  --color-background-footer: #171717;
+  
+  --color-shadow-card-first: #56534E08;
+  --color-shadow-card-second: #56534E05;
+  --color-shadow-card-three: #56534E00;
+  
+  --color-secondary: #4f46e5;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #6b7280;  
+}
