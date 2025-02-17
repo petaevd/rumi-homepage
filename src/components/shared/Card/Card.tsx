@@ -5,13 +5,20 @@ export const Card = ({
     title,
     text,
     width,
-    icon
+    icon,
+    number
 } : CardProps ) => { // TODO: Поменять div на p или span 
     return(
         <div className={styles["card"]} style={{ width: width !== undefined ? width : undefined }}>
+            {number && (
+                <div className={styles["card__number"]}>
+                    {number}
+                </div>
+            )}
+
             {icon && (
                 <div className={styles["card__icon"]}>
-                    <img src={icon} alt="Иконка шага" />
+                    <img src={icon} alt="Иконка" />
                 </div>
             )}
             

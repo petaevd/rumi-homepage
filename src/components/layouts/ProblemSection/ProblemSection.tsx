@@ -5,15 +5,15 @@ import CardIcon from 'assets/icons/card-icon.svg';
 
 const cardInfo = [
     {
-        title: "Долгая разработка", 
+        title: "Быстрая разработка", 
         text: "С нами ваши идеи будут реализованы в короткие сроки, а не за месяцы традиционной разработки"
     },
     {
-        title: "Высокие затраты", 
-        text: "Сэкономьте бюджет: никаких затрат на большую команду и инфраструктуру не потребуется"
+        title: "Низкие затраты", 
+        text: "Никаких затрат на большую команду и инфраструктуру не потребуется"
     },
     {
-        title: "Автоматизация процессов", 
+        title: "Автоматизированные процессы", 
         text: "Встроенные инструменты автоматизируют рутинные задачи, экономя ваше время"
     }
 ];
@@ -22,7 +22,7 @@ export const ProblemSection = () => {
 
     return(
         <section className={styles["problem-section"]}>
-            <h2>Забудьте о долгой и дорогой разработке</h2>
+            <h2>ЗАБУДЬТЕ О ДОЛГОЙ И ДОРОГОЙ РАЗРАБОТКЕ</h2>
             <div className={styles["problem-section__components"]}>
                 <div className={styles["problem-section__components-img"]}>
                     <img src={AASSEE} alt="Картинка компьютера" />

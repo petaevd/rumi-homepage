@@ -3,4 +3,5 @@ export interface CardProps {
     text: string;
     width?: number;
     icon?: string;
+    number?: string;
 } 

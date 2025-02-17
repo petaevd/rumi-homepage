@@ -1,25 +1,32 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('src/assets/fonts/Roboto/Roboto.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('src/assets/fonts/Lato/Lato-Black.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-  
-@font-face {
-    font-family: 'Roboto';
-    src: url('src/assets/fonts/Roboto.ttf');
-}
 
 h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 41.6px;
+    font-family: 'Lato', sans-serif;
 }
 
 p {

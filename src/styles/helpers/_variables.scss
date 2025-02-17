@@ -5,7 +5,6 @@ $breakpoints: (
   xl: 1200px
 );
 
-/* CSS Custom Properties */
 :root {
   // Задний фон 
   --gradient-start: #E1E8FF;
@@ -13,6 +12,8 @@ $breakpoints: (
 
   // Colors
   --color-core-brand-600: #245BFD;
+  --color-core-brand-900: #011755;
+
   --color-core-gray-000: #FDFEFE;
 
   --color-background-footer: #171717;

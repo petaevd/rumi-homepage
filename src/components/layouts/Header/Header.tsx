@@ -20,12 +20,12 @@ export const Header = () => {
                 </div>
 
                 <div className={styles["header__nav-btns"]}>
-                    <Button
+                    {/* <Button
                         children="Зарегистрироваться"
                         appearance='outline'
                         size='medium'
                         rounded
-                    />
+                    /> */}
                     
                     <Button 
                         children="Войти"
