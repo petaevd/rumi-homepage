@@ -7,7 +7,9 @@ import {
   Footer,
   AdvantagesSection,
   AISection,
-  SurvaySection
+  TariffSection,
+  SurvaySection,
+  FaqSection
 } from 'components/index.ts';
 
 export const HomePage = () => {
@@ -20,7 +22,9 @@ export const HomePage = () => {
         <ProblemSection />
         <AdvantagesSection />
         <AISection />
+        <TariffSection />
         <SurvaySection />
+        <FaqSection />
       </main>
       <Footer />
     </>

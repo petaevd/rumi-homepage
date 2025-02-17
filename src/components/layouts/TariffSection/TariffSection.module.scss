@@ -1,12 +1,11 @@
-.road-section {
+.tariff-section {
     display: flex;
     flex-direction: column;
     gap: 2em;
-
+    
     &__cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
     }
 }

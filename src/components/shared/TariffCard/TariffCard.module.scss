@@ -1,0 +1,47 @@
+@use 'styles/helpers/variables';
+
+.card {
+    width: 437px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 1.5em;
+    border-radius: 20px;
+    background-color: var(--color-core-gray-000);
+    box-shadow: 
+        0.91px 2.72px 6.35px 0px var(--color-shadow-card-first),
+        3.63px 10.89px 11.79px 0px var(--color-shadow-card-first),
+        8.16px 24.49px 15.42px 0px var(--color-shadow-card-second),
+        14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
+        21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
+
+    &__block {}
+
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0%;
+    }
+
+    &__description {
+        margin-top: 8px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    &__price {
+        margin: 12px 0 16px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0%;
+    }
+
+    &__btn {
+        align-items: start;
+        margin: 0 auto;
+    }
+}
