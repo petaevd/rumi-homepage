@@ -1,30 +1,30 @@
 import styles from './AdvantagesSection.module.scss';
 import { Card } from 'components/shared/Card/index.ts';
-import rocket from 'assets/icons/ion_rocket-sharp.svg';
-import star from 'assets/icons/solar_star-bold-duotone.svg';
-import starFall from 'assets/icons/solar_star-fall-bold-duotone.svg';
-import robot from 'assets/icons/mage_robot-happy-fill.svg';
+import fire from 'assets/icons/solar_fire.svg';
+import rocket from 'assets/icons/solar_rocket.svg';
+import layers from 'assets/icons/solar_layers.svg';
+import robotSmile from 'assets/icons/solar_smile-square.svg';
 
 const cardInfo = [
     {
         title: "Автоматизация процессов", 
-        text: "встроенные инструменты для интеграций бизнес-решений",
-        icon: rocket
+        text: "встроенные инструменты ускоряют работу и упрощают интеграцию бизнес-решений",
+        icon: fire
     },
     {
         title: "Мгновенное развертывание", 
-        text: "распространение приложения в один клик с автоматическим масштабированием",
-        icon: star
+        text: "быстрое распространение приложений с автоматическим масштабированием",
+        icon: rocket
     },
     {
         title: "Готовые компоненты", 
-        text: "быстрая сборка интерфейса с помощью библиотеки компонентов",
-        icon: starFall
+        text: "быстрая сборка интерфейса с помощью готовой библиотеки компонентов ",
+        icon: layers
     },
     {
         title: "ИИ-ассистент", 
-        text: "помощь в создании компонентов и оптимизации кода в реальном времени",
-        icon: robot
+        text: "ускорение создания компонентов и оптимизация кода в реальном времени",
+        icon: robotSmile
     }
 ];
 

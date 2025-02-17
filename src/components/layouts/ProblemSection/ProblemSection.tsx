@@ -1,20 +1,25 @@
 import styles from './ProblemSection.module.scss';
 import { Card } from 'components/shared/Card/index.ts';
 import AASSEE from 'assets/images/AASSEE.svg';
-import CardIcon from 'assets/icons/card-icon.svg';
+import spedometer from 'assets/icons/solar_spedometer.svg';
+import settings from 'assets/icons/solar_settings.svg';
+import wallet from 'assets/icons/solar_wallet.svg';
 
 const cardInfo = [
     {
         title: "Быстрая разработка", 
-        text: "С нами ваши идеи будут реализованы в короткие сроки, а не за месяцы традиционной разработки"
+        text: "С нами ваши идеи будут реализованы в короткие сроки, а не за месяцы традиционной разработки",
+        icon: spedometer
     },
     {
         title: "Низкие затраты", 
-        text: "Никаких затрат на большую команду и инфраструктуру не потребуется"
+        text: "Никаких затрат на большую команду и инфраструктуру не потребуется",
+        icon: wallet
     },
     {
         title: "Автоматизированные процессы", 
-        text: "Встроенные инструменты автоматизируют рутинные задачи, экономя ваше время"
+        text: "Встроенные инструменты автоматизируют рутинные задачи, экономя ваше время",
+        icon: settings
     }
 ];
 
@@ -34,7 +39,7 @@ export const ProblemSection = () => {
                                 key={i}
                                 title={item.title}
                                 text={item.text}
-                                icon={CardIcon}
+                                icon={item.icon}
                             />
                         );
                     })}
