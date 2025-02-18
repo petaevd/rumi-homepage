@@ -15,7 +15,12 @@
         14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
         21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
 
-    &__block {}
+    &__block {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
 
     &__title {
         font-weight: 500;
@@ -33,7 +38,7 @@
     }
 
     &__price {
-        margin: 12px 0 16px;
+        margin: auto 0 16px;
         font-weight: 500;
         font-size: 24px;
         line-height: 28px;

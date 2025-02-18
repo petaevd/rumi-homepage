@@ -3,6 +3,7 @@ import { TariffCard } from 'components/shared/TariffCard/TariffCard.tsx';
 import star from 'assets/icons/solar_star.svg';
 import stars from 'assets/icons/solar_stars.svg';
 import starRainbow from 'assets/icons/solar_star-rainbow.svg';
+import starFall from 'assets/icons/solar_star-fall.svg';
 
 const cardInfo = [
     {
@@ -14,14 +15,20 @@ const cardInfo = [
     {
         title: "КОМАНДНЫЙ", 
         desciption: "Для малых и средних команд, которым нужна гибкость и совместная работа",
-        price: "700 ₽/мес",
+        price: "999 ₽/мес",
         icon: stars
     },
     {
         title: "БИЗНЕС", 
         desciption: "Для компаний, которым нужна высокая производительность и расширенные функции",
-        price: "1500 ₽/мес",
+        price: "1299 ₽/мес",
         icon: starRainbow
+    },
+    {
+        title: "PRO", 
+        desciption: "Доступны все возможности нашей платформы Rumi",
+        price: "1699 ₽/мес",
+        icon: starFall
     }
 ];
 
