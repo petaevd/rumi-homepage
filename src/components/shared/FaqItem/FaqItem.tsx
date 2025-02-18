@@ -19,7 +19,7 @@ export const FaqItem = ({ question, children }: FaqItemProps) => {
                 <span className={styles['question-text']}>{question}</span>
                 <span className={styles['icon']}>
                     <svg
-                        className={`${styles.arrow} ${isOpen ? styles.openArrow : ''}`}
+                        className={styles['arrow']}
                         width="20"
                         height="28"
                         viewBox="0 0 24 24"

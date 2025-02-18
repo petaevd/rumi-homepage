@@ -1,6 +1,63 @@
 @use 'styles/helpers/variables';
 
 .footer {
-    height: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    color: white;
+    padding: 3em;
     background-color: var(--color-background-footer);
+
+    &__copyright {}
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        gap: 13.125em;
+    }
+
+    &__info-logo {}
+
+    &__info-block {
+        display: flex;
+        flex-direction: row;
+        gap: 14.375em;
+        
+        &__docs,
+        &__nav,
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        &__contact {
+            text-align: right;
+            
+            &-social {
+                display: flex;
+                flex-direction: row;
+                gap: 14px;
+                justify-content: end;
+            }
+        }
+    }
+}
+
+.footer-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.number {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
 }

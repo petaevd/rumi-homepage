@@ -8,7 +8,7 @@ export const Header = () => {
         <header className={styles["header"]}>
             <div className={styles["header__logo"]}>
                 <a href="/" className="logo-link" aria-label="Перейти на главную">
-                    <img src="src/assets/images/logo.svg" alt="Логотип" />
+                    <img src="src/assets/images/logo-black.svg" alt="Логотип" />
                 </a>
             </div>
             <nav className={styles["header__nav"]}>
