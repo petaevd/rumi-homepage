@@ -3,10 +3,10 @@ import styles from './Header.module.scss';
 import { Button } from 'components/ui/Button/index.ts';
 
 export const Header = () => {
-    const handleScroll = (id:any) => {
+    const handleScroll = (id:string) => {
         const element = document.getElementById(id);
         if (element) {
-          const headerHeight = document.querySelector('header').offsetHeight;
+          const headerHeight = document.querySelector('header')!.offsetHeight;
           window.scrollTo({
             top: element.offsetTop - headerHeight,
             behavior: 'smooth'
