@@ -1,0 +1,31 @@
+.survay-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 26px;
+    background-color: white;
+    padding: 3em 13.75em;
+    box-shadow: 
+        0.91px 2.72px 6.35px 0px var(--color-shadow-card-first),
+        3.63px 10.89px 11.79px 0px var(--color-shadow-card-first),
+        8.16px 24.49px 15.42px 0px var(--color-shadow-card-second),
+        14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
+        21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    &__btn {
+        margin: 0 auto;
+    } 
+
+    &__button-link {
+        text-decoration: none;
+        color: inherit;
+        color: white;
+    }
+}

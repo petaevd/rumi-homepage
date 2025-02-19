@@ -7,4 +7,5 @@ export * from './AdvantagesSection/index.ts';
 export * from './AISection/index.ts';
 export * from './TariffSection/index.ts';
 export * from './SurveySection/index.ts';
+export * from './OprosSection/index.ts';
 export * from './FaqSection/index.ts';

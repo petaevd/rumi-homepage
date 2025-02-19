@@ -1,0 +1,1 @@
+export { OprosSection } from './OprosSection.tsx';
