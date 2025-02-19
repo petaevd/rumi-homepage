@@ -22,20 +22,21 @@ export const Footer = () => {
                     </div>
                     <div className={styles["footer__info-block__contact"]}>
                         <a href="#" className={styles["number"]}>8 900 585 00 00</a>
-                        <a href="#" className={styles["footer-item"]}>email@mail.ru</a>
-                        <div className={styles["footer__info-block__contact-social"]}>
+                        <a href="#" className={styles["footer-item"]}>rumiapp@yandex.com</a>
+                        {/* <div className={styles["footer__info-block__contact-social"]}>
                             <a href="https://vk.com">
                                 <img src="src/assets/icons/vk.svg" alt="Иконка ВКонтакте" />
                             </a>
                             <a href="https://web.telegram.org/">
                                 <img src="src/assets/icons/tg.svg" alt="Иконка Телеграм" />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
             <div className={styles["footer__copyright"]}>
                 &copy; Rumi. Все права защищены
+                <div>Разработано студентами ЧувГУ</div>
             </div>
         </footer>
     );
