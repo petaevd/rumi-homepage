@@ -4,7 +4,7 @@ import { FaqItem } from 'components/shared/FaqItem/index.ts';
 export const FaqSection = () => {
 
     return(
-        <section className={styles['faq-section']}>
+        <section id="faq-section" className={styles['faq-section']}>
             <h2>ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
             <div className={styles['faq-section__items']}>
                 <FaqItem

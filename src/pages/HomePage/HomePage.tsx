@@ -8,7 +8,7 @@ import {
   AdvantagesSection,
   AISection,
   TariffSection,
-  SurvaySection,
+  // SurvaySection,
   OprosSection,
   FaqSection
 } from 'components/index.ts';
@@ -24,7 +24,7 @@ export const HomePage = () => {
         <AdvantagesSection />
         <AISection />
         <TariffSection />
-        <SurvaySection />
+        {/* <SurvaySection /> */}
         <OprosSection />
         <FaqSection />
       </main>

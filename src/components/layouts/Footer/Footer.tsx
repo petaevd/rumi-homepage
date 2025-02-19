@@ -2,7 +2,7 @@ import styles from './Footer.module.scss';
 
 export const Footer = () => {
     return(
-        <footer className={styles["footer"]}>
+        <footer id="footer" className={styles["footer"]}>
             <div className={styles["footer__info"]}>
                 <div className={styles["footer__info-logo"]}>
                     <a href="/" aria-label="Перейти на главную">
@@ -21,22 +21,13 @@ export const Footer = () => {
                         <a href="#" className={styles["footer-item"]}>Условия использования</a>
                     </div>
                     <div className={styles["footer__info-block__contact"]}>
-                        <a href="#" className={styles["number"]}>8 900 585 00 00</a>
-                        <a href="#" className={styles["footer-item"]}>rumiapp@yandex.com</a>
-                        {/* <div className={styles["footer__info-block__contact-social"]}>
-                            <a href="https://vk.com">
-                                <img src="src/assets/icons/vk.svg" alt="Иконка ВКонтакте" />
-                            </a>
-                            <a href="https://web.telegram.org/">
-                                <img src="src/assets/icons/tg.svg" alt="Иконка Телеграм" />
-                            </a>
-                        </div> */}
+                        <a href="#" className={styles["number"]}>rumiapp@yandex.com</a>
+                        <a href="#" className={styles["footer-item"]}>Разработано студентами ЧувГУ</a>
                     </div>
                 </div>
             </div>
             <div className={styles["footer__copyright"]}>
                 &copy; Rumi. Все права защищены
-                <div>Разработано студентами ЧувГУ</div>
             </div>
         </footer>
     );

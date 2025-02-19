@@ -4,10 +4,12 @@ import styles from './NavItem.module.scss';
 
 export const NavItem = ({ 
     to,
-    text 
+    text,
+    onClick
 }: NavItemProps) => (
   <Link 
     to={to}
+    onClick={onClick}
     className={styles["nav__link"]}
     role="link"
     aria-label={`Перейти к ${text}`}

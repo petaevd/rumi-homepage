@@ -26,7 +26,7 @@ const cardInfo = [
 export const ProblemSection = () => {
 
     return(
-        <section className={styles["problem-section"]}>
+        <section className={styles["problem-section"]} id="problem-section">
             <h2>ЗАБУДЬТЕ О ДОЛГОЙ И ДОРОГОЙ РАЗРАБОТКЕ</h2>
             <div className={styles["problem-section__components"]}>
                 <div className={styles["problem-section__components-img"]}>

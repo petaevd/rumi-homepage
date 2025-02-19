@@ -35,7 +35,7 @@ const cardInfo = [
 export const TariffSection = () => {
 
     return(
-        <section className={styles["tariff-section"]}>
+        <section id="tariffs-section" className={styles["tariff-section"]}>
             <h2>ТАРИФЫ</h2>
             <div className={styles["tariff-section__cards"]}>
                 {cardInfo.map((item, i) => {

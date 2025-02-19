@@ -3,6 +3,16 @@ import styles from './Header.module.scss';
 import { Button } from 'components/ui/Button/index.ts';
 
 export const Header = () => {
+    const handleScroll = (id:any) => {
+        const element = document.getElementById(id);
+        if (element) {
+          const headerHeight = document.querySelector('header').offsetHeight;
+          window.scrollTo({
+            top: element.offsetTop - headerHeight,
+            behavior: 'smooth'
+          });
+        }
+      };
 
     return(
         <header className={styles["header"]}>
@@ -13,20 +23,13 @@ export const Header = () => {
             </div>
             <nav className={styles["header__nav"]}>
                 <div className={styles["header__nav-links"]}>
-                    <NavItem to="#" text="Услуги"/>
-                    <NavItem to="#" text="Тарифы"/>
-                    <NavItem to="#" text="О проекте"/>
-                    <NavItem to="#" text="Контакты"/>
+                    <NavItem onClick={() => handleScroll('problem-section')} to="#problem-section" text="Преимущества"/>
+                    <NavItem onClick={() => handleScroll('tariffs-section')} to="#tariffs-section" text="Тарифы"/>
+                    <NavItem onClick={() => handleScroll('faq-section')} to="#faq-section" text="Часто задаваемые вопросы"/>
+                    <NavItem onClick={() => handleScroll('footer')} to="#footer" text="Контакты"/>
                 </div>
 
                 <div className={styles["header__nav-btns"]}>
-                    {/* <Button
-                        children="Зарегистрироваться"
-                        appearance='outline'
-                        size='medium'
-                        rounded
-                    /> */}
-
                     <Button 
                         children="Присоеденится к бета тестированию"
                         appearance='solid'
