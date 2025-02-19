@@ -25,7 +25,7 @@ export const Header = () => {
                 <div className={styles["header__nav-links"]}>
                     <NavItem onClick={() => handleScroll('problem-section')} to="#problem-section" text="Преимущества"/>
                     <NavItem onClick={() => handleScroll('tariffs-section')} to="#tariffs-section" text="Тарифы"/>
-                    <NavItem onClick={() => handleScroll('faq-section')} to="#faq-section" text="Часто задаваемые вопросы"/>
+                    <NavItem onClick={() => handleScroll('faq-section')} to="#faq-section" text="FAQ"/>
                     <NavItem onClick={() => handleScroll('footer')} to="#footer" text="Контакты"/>
                 </div>
 
