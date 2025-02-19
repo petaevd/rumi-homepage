@@ -13,10 +13,17 @@ export const StartSection = () => {
                     </div>
                     <div className={styles["start-section__left-form-btns"]}>
                         <Button 
-                            children="Создать приложение"
                             rounded
                             size='large'
-                        />
+                        >
+                            <a 
+                                href="https://forms.yandex.ru/u/67b5f74690fa7b07927e1969/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                Создать приложение
+                            </a>
+                        </Button>
                     </div>
                 </div>
             </div>

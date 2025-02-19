@@ -30,12 +30,19 @@ export const Header = () => {
                 </div>
 
                 <div className={styles["header__nav-btns"]}>
-                    <Button 
-                        children="Присоеденится к бета тестированию"
+                    <Button
                         appearance='solid'
                         size='medium'
                         rounded
-                    />
+                    >
+                        <a 
+                            href="https://forms.yandex.ru/u/67b5f74690fa7b07927e1969/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            Присоеденится к бета тестированию
+                        </a>
+                    </Button>
                 </div>
             </nav>
         </header>
