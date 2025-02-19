@@ -8,7 +8,11 @@
     padding: 3em;
     background-color: var(--color-background-footer);
 
-    &__copyright {}
+    &__copyright {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     &__info {
         display: flex;
