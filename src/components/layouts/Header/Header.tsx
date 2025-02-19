@@ -26,9 +26,9 @@ export const Header = () => {
                         size='medium'
                         rounded
                     /> */}
-                    
+
                     <Button 
-                        children="Войти"
+                        children="Присоеденится к бета тестированию"
                         appearance='solid'
                         size='medium'
                         rounded
