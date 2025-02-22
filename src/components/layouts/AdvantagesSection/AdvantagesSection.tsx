@@ -40,7 +40,6 @@ export const AdvantagesSection = () => {
                             key={i}
                             title={item.title}
                             text={item.text}
-                            width={324}
                             icon={item.icon}
                         />
                     );

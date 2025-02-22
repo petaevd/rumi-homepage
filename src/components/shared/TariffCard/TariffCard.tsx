@@ -6,7 +6,8 @@ export const TariffCard = ({
     title,
     description,
     price,
-    icon
+    icon,
+    buttonText
 } : TariffCardProps ) => {
     return(
         <div className={styles["card"]}>
@@ -20,7 +21,7 @@ export const TariffCard = ({
                 <div className={styles["card__price"]}>{price}</div>
                 <div className={styles["card__btn"]}>
                     <Button
-                        children="Попробовать"
+                        children={buttonText}
                     />
                 </div>
             </div>

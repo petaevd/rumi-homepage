@@ -10,25 +10,29 @@ const cardInfo = [
         title: "БАЗОВЫЙ", 
         desciption: "Для начинающих пользователей, которые хотят попробовать платформу без затрат",
         price: "0 ₽",
-        icon: star
+        icon: star,
+        buttonText: "Попробовать"
     },
     {
         title: "КОМАНДНЫЙ", 
         desciption: "Для малых и средних команд, которым нужна гибкость и совместная работа",
         price: "999 ₽/мес",
-        icon: stars
+        icon: stars,
+        buttonText: "Попробовать бесплатно"
     },
     {
         title: "БИЗНЕС", 
         desciption: "Для компаний, которым нужна высокая производительность и расширенные функции",
         price: "1299 ₽/мес",
-        icon: starRainbow
+        icon: starRainbow,
+        buttonText: "Попробовать бесплатно"
     },
     {
         title: "PRO", 
         desciption: "Доступны все возможности нашей платформы Rumi",
         price: "1699 ₽/мес",
-        icon: starFall
+        icon: starFall,
+        buttonText: "Попробовать бесплатно"
     }
 ];
 
@@ -46,6 +50,7 @@ export const TariffSection = () => {
                             description={item.desciption}
                             price={item.price}
                             icon={item.icon}
+                            buttonText={item.buttonText}
                         />
                     );
                 })}

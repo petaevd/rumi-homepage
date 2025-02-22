@@ -40,7 +40,7 @@ export const Header = () => {
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
-                            Присоеденится к бета тестированию
+                            Присоединится к нам
                         </a>
                     </Button>
                 </div>

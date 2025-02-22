@@ -1,3 +1,5 @@
+@use 'styles/helpers/mixins' as *;
+
 .problem-section {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,10 @@
         display: flex;
         flex-direction: row;
         gap: 1.25em;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__components-img {
@@ -22,20 +28,25 @@
             8.16px 24.49px 15.42px 0px var(--color-shadow-card-second),
             14.51px 43.54px 18.14px 0px var(--color-shadow-card-three),
             21.77px 68.04px 19.96px 0px var(--color-shadow-card-three);
+
+            > img {
+                width: 100%;
+                height: auto;
+            }
     }
 
     &__components-cards {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__components-cards > :nth-child(1) {
         grid-column: 1 / -1;
-    }
-
-    &__components-cards {
-        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -1,3 +1,5 @@
+@use 'styles/helpers/mixins' as *;
+
 .ai-section {
     display: flex;
     flex-direction: column;
@@ -7,6 +9,10 @@
         display: flex;
         flex-direction: row;
         gap: 1.25em;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__components-img {
@@ -27,15 +33,15 @@
     &__components-cards {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__components-cards > :nth-child(1) {
         grid-column: 1 / -1;
-    }
-
-    &__components-cards {
-        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -1,3 +1,5 @@
+@use 'styles/helpers/mixins' as *;
+
 .road-section {
     display: flex;
     flex-direction: column;
@@ -8,5 +10,9 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 }

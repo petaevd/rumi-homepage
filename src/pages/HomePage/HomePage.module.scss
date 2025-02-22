@@ -1,6 +1,12 @@
+@use 'styles/helpers/mixins' as *;
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 6.875em;
     padding: 2em 3em 6.875em 3em;
+
+    @include mobile {
+        padding: 2em 1em 6.875em 1em;
+    }
 }

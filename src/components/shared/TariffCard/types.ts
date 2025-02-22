@@ -3,4 +3,5 @@ export interface TariffCardProps {
     description: string;
     price: string;
     icon: string;
+    buttonText: string;
 } 

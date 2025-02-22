@@ -1,3 +1,5 @@
+@use 'styles/helpers/mixins' as *;
+
 @font-face {
     font-family: 'Roboto';
     src: url('src/assets/fonts/Roboto/Roboto.ttf');
@@ -52,4 +54,28 @@ a {
     text-decoration: none;
     color: inherit;
     color: white;
+}
+
+@include mobile {
+    h1 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 41.6px;
+        letter-spacing: 1%;
+    }
+    
+    h2 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 41.6px;
+        letter-spacing: 1%;
+    }
+    
+    h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 33.8px;
+        letter-spacing: 1%;
+    }
 }

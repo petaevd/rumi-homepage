@@ -1,4 +1,5 @@
 @use 'styles/helpers/variables';
+@use 'styles/helpers/mixins' as *;
 
 .card {
     width: 437px;
@@ -47,6 +48,9 @@
 
     &__btn {
         align-items: start;
-        margin: 0 auto;
+    }
+
+    @include mobile {
+        width: 343px;
     }
 }

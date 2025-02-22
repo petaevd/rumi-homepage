@@ -1,3 +1,5 @@
+@use 'styles/helpers/mixins' as *;
+
 .survay-section {
     display: flex;
     flex-direction: column;
@@ -27,5 +29,9 @@
         text-decoration: none;
         color: inherit;
         color: white;
+    }
+
+    @include mobile {
+        padding: 2em 1em;
     }
 }

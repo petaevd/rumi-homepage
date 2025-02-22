@@ -1,10 +1,11 @@
+@use 'styles/helpers/mixins' as *;
+
 .start-section {
     display: flex;
     flex-direction: row;
-    gap: 15em;
+    gap: 13em;
     border-radius: 20px;
     background-color: white;
-    padding: 36px;
     box-shadow: 
         0.91px 2.72px 6.35px 0px var(--color-shadow-card-first),
         3.63px 10.89px 11.79px 0px var(--color-shadow-card-first),
@@ -15,8 +16,16 @@
     &__left-form {
         display: flex;
         flex-direction: column;
-        margin: 6.375em auto;
+        margin: 12.5em 0 12.5em 2.25em;
         gap: 1.5em;
+
+        @include mobile {
+            text-align: center;
+            align-items: center;
+            gap: 1.5em;
+            flex-direction: column;
+            margin: 0;
+        }
     }
 
     &__left-form-text {
@@ -25,8 +34,18 @@
         gap: 1em;
     }
 
-    &__rigth-img {
-        width: 384px;
-        height: 444px;
+    &__rigth {
+        margin: 1.25em 1.25em 1.25em 0;
+        
+        > img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @include mobile {
+        gap: 2.25em;
+        flex-direction: column;
+        padding: 3em 0.75em;
     }
 }
