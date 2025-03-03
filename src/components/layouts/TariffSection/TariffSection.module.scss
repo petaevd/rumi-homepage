@@ -8,11 +8,19 @@
     &__cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         gap: 1em;
+
+        > * {
+            flex: 1 1 0;
+        }
 
         @include mobile {
             flex-direction: column;
+
+            > * {
+                flex: none;
+                width: 100%;
+            }
         }
     }
 }
